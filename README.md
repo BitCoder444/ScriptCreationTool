@@ -3,18 +3,18 @@ A tool for making scripts executable
 This is a quick app I wrote for making scripts executable. 
 
 The main script so far contains this simple code written in Bash.
-
+```
 #!/bin/bash
 echo 'Please enter a valid path to your script(s).'
 read path 
 echo $path | java -jar ConvertToExecutable.jar
-
+```
 ConvertToExecutable is a simple class that does a few things.
 
-/* This app will run a special command
+ * This java app will run a special command
  * that will change the properties of files
  * in a given directory with specific properties
- * For compactness, all classes will be placed within
+ * For compactness, all code will be placed within
  * one file.
  * 
  * This is not meant to be run by a normal user.
@@ -25,7 +25,8 @@ ConvertToExecutable is a simple class that does a few things.
  * All files that are to be executable should
  * have the .sh extention. All files must also not
  * contain any empty spaces.
- * */
+ * 
+``` 
 package bundle;
 
 import java.io.File;
@@ -50,13 +51,16 @@ public class ConvertToExecutable
         
         for (File script: listOfFiles)
         {
-            try {
-				run.exec("chmod u+x " + script);
-			    System.out.println(script + " has been set as executable.");
-            } catch (IOException e) {
-				e.printStackTrace();
-			}
+            try
+	    {
+	        run.exec("chmod u+x " + script);
+                System.out.println(script + " has been set as executable.");
+            } catch (IOException e)
+	    {
+	        e.printStackTrace();
+            }
         }
-	}
+ }
 
 }
+```
