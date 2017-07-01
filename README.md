@@ -18,6 +18,7 @@ ConvertToExecutable is a simple class that does a few things.
  * one file.
  * 
  * This is not meant to be run by a normal user.
+ * Another scrip will run this app.
  * With that being noted, certain variables will
  * be initialized without asking requesting data
  * from STDOUT.
@@ -25,7 +26,7 @@ ConvertToExecutable is a simple class that does a few things.
  * All files that are to be executable should
  * have the .sh extention. All files must also not
  * contain any empty spaces.
- * 
+
 ``` 
 package bundle;
 
@@ -63,4 +64,6 @@ public class ConvertToExecutable
  }
 
 }
+
 ```
+Simply open up a terminal, cd to the folder ScriptCreationTool, and type ./
