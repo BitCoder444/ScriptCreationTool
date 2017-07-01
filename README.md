@@ -1,5 +1,5 @@
 # ScriptCreationTool
-A tool for making scripts executable
+A tool for making scripts executable.
 This is a quick app I wrote for making scripts executable. 
 
 The main script so far contains this simple code written in Bash.
