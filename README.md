@@ -66,4 +66,5 @@ public class ConvertToExecutable
 }
 
 ```
-Simply open up a terminal, cd to the folder ScriptCreationTool, and type ./
+Simply open up a terminal, cd to the folder ScriptCreationTool, and type ./MakeScriptsExecutable.sh.
+You will be prompted to enter the directory of the scripts you want to make executable. After you enter it presd enter.
